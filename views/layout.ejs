@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+
+		<title>Morgana</title>
+		<meta name="description" content="Morgana, diseño, prendas, accesorios, moda, rosario" />
+		<meta name="author" content="Andres Atencio" />
+
+		<!--Grab the Stylesheets-->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/stylePersonal.css" rel="stylesheet" type="text/css">
+		<link href="css/flexslider.css" rel="stylesheet" type="text/css">
+		
+
+		
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-38494479-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+	</script>
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="sixteen columns alpha omega">
+				<br>
+				<br>
+				<h1 id='titulo'>MORGANA</h1>
+				<nav class="main-nav sixteen columns">
+					<ul class="ten columns alpha">
+						<li><a href="/">Home</a></li>
+						<li><a href="/prendas">Prendas</a></li>
+						<li><a href="/accesorios">Accesorios</a></li>
+						<li><a href="/contacto">Contacto</a></li>
+						
+					</ul>
+					<div class="social six columns omega">
+						<a href="https://www.facebook.com/jorgelina.calin?ref=ts&fref=ts" target="_blank"></a>
+						<a href="#"></a>
+					</div> <!--Close Social Div-->
+				</nav>
+			</header>
+
+			<%- body %>
+			
+			<footer class="row">
+				<div class="eight columns omega">
+					<p>MORGANA</p>
+				</div>
+					<nav class="eight columns alpha">
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/prendas">Prendas</a></li>
+							<li><a href="/accesorios">Accesorios</a></li>
+							<li><a href="/contacto">Contacto</a></li>
+						</ul>
+					</nav>
+			</footer>
+		</div><!--Close Container Div-->
+		
+		<!--Grab JS Files-->
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/jquery.flexslider.js" ></script>
+		<script type="text/javascript">
+			// Can also be used with $(document).ready()
+			$(window).load(function() {
+			  $('.flexslider').flexslider({
+			    animation: "slide"
+			  });
+			});
+		</script>
+		<div id='yo'>
+			<br>
+			<p>Development </p><a href="http://andresatencio.com.ar" target="_blank">Andres Atencio</a>
+		</div>
+	</body>
+</html>
