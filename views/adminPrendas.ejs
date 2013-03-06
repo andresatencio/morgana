@@ -1,9 +1,36 @@
 <div class="row">
-	<form action="/admin/prendas" method="POST"></form>
-	<div class="span3">
-		
-	</div>
-	<div class="span3">
-		
-	</div>
+	<form action="/admin/prendas" method="POST">
+		<div class="row">
+			<div class="span12">
+				<legend>Agregar prenda</legend>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span2">
+				<label class="control-label" for="titulo">Titulo</label>
+			</div>
+			<div class="span3">
+				<label class="control-label" for="descp">Descripcion</label>
+			</div>
+			
+		</div>
+		<div class="row">
+			<div class="span2">
+				<input type="text" class="input-small" id="titulo">
+			</div>
+			<div class="span3">
+				<textarea class="input" id="descp" rows="1"></textarea>
+			</div>
+			<div class="span4">
+				<span class="btn btn-success fileinput-button">
+                    <i class="icon-plus icon-white"></i>
+                    <span>Subir imagen</span>
+                    <input type="file" name="files[]">
+                </span>
+			</div>
+			<div class="span2">
+			    <button class="btn btn-primary">Cargar</button>
+			</div>	
+		</div>
+	</form>
 </div>
