@@ -3,6 +3,7 @@
  * GET home page.
  */
 
+
 exports.index = function(req, res){
   res.render('index');
 };
@@ -16,5 +17,8 @@ exports.accesorios = function(req, res){
   res.render('accesorios');
 };
 exports.admin = function(req, res){
-  res.render('admin');
+  res.render('admin', { layout: 'boostrap' });
+};
+exports.adminPrendas = function(req, res){
+  res.render('adminPrendas', { layout: 'boostrap' });
 };

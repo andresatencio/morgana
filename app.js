@@ -33,6 +33,7 @@ app.get('/contacto', routes.contacto);
 app.get('/prendas', routes.prendas);
 app.get('/accesorios', routes.accesorios);
 app.get('/admin', routes.admin);
+app.get('/admin/prendas', routes.adminPrendas);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
